@@ -30,26 +30,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .forEach modifies an existing array by invoking a function against each value. .map creates a new array by invoking a function against each value.
+
 2. What is the difference between a function and a method?
+
+    A method is a function used only in a certain context (such as an object or class). For example a function within a constructor is a method and can only be used for that constructor. Array methods are methods that can only be used on array. 
 
 3. What is closure?
 
+    Closure is a combination of a function and the lexical environment within which that function was declared. In other words closure is the ending of a function and what keeps variables within one function scope from being able to be accessed by another function scope (as long as one is not within the other)while still being able to access variables in the global scope and in functions that are outside of it. When a function returns another function the returned function has access to the variable that are withins that exist only in that closure.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Global/Window Binding - When 'this' is used in the global scope it is referring to the browser window. This is rarely used.
+    2. Internal Binding - When using 'this' within an object scope, this will refer to the name of the object. In this case the object provides context as to what 'this' is refering to.
+    3. External Binding - When using 'this' with the apply, call, or bind object methods, this gets defined explicitly as part of the argument.
+    4. Constructor/New Binding - When this is used in the Constructor binding it is helping to build an object template. It can help to create certain placeholders for key value pairs that can then be populated using the 'new' keyword
+
 5. Why do we need super() in an extended class?
+
+    super() allows us to access the properties declared in the class from which our class was extended from. For example if we're extending Parent class to a Child class, super() allows the child class to utilize the properties within the Parent class.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add PM as collaborator on Github.
+- [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [X] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [X] You are now ready to build this project with your preferred IDE
+- [X] Implement the project on your Branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
