@@ -30,7 +30,7 @@ CuboidMaker.prototype.volume = function(attributes) {
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
 
-CuboidMaker.prototype.surfaceArea = function(length, width, height) {
+CuboidMaker.prototype.surfaceArea = function(attributes) {
   return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
 };
 
