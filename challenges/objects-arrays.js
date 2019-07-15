@@ -115,9 +115,12 @@ console.log(contactInfo);
 
 
 
-let uni = universities.filter( function(university) {
-  return university.includes("Uni");
-});
+// let uni = universities.filter( function(university) {
+//   return university.includes("Uni");
+// });
+
+let uni = universities.filter( university => university.includes("Uni"));
+
 
 console.log(uni);
 
